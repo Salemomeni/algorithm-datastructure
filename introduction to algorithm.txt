@@ -1,0 +1,24 @@
+CREATE AN ALGORITHM THAT READS A SENTENCE, WHICH ENDS WITH A POINT CHARACTER BY CHARACTER , AND TO DETERMINE:
+
+
+ 1. The length of the sentence (the number of characters)
+ 2. The number of words in the sentence (assuming that the words are seperated by a single space)
+
+
+Keep in mind that:
+
+. Each character will be treated seperately
+. The last character is the POINT
+. Use three variables as counters
+
+Solution
+
+Step 1 - create a container for the sentence . We could use prompt to ask a user for a sentence.
+
+Step 2 - To determine the length of the sentence: we can create a variable to store the length of the sentence and use the .length method to get the length.
+
+Step 3  final step- Determine the number of words assuming they are seperated by a space:
+        first thing - split each word after any seen space into an array
+        second thing - create a variable that will store the number of words found
+        third thing - loop through the array of words and as we are looping through it increment the variable that stores the counters
+        final - at the end of the loop the count would have stored the amount of words in the array

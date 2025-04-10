@@ -1,0 +1,34 @@
+Problem 2:  
+Write a procedure, called dot_product which calculates in the variable ps, the dot(scalar) product of v1 and v2 (v1 and v2 are vectors of IR)
+Write an algorithm which determines, for n pairs of given vectors, whether two vectors of given IR are orthogonal, by calling the procedure defined in the previous question. The dot product of two orthogonal vectors is zero.
+Modify the previous algorithm if you use a dot_product function instead of a procedure.
+
+
+Step 1 - we are simply checking for orthogonality of the product of 2 vecotrs which means 
+         we are checking if their product is = 0 (orthogonal) else non orthogonal
+Step 2 - Create a variable called dot_product and set it to be 0;
+Step 3 - create a v1 vector and make it an array that represents 2 points
+          let dot_product = 0;
+          let v1 = [3, 5];
+Step 4 - create a v2 vector and also make it an array too
+          let dot_product = 0;
+          let v1 = [3, 5];
+          let v2 = [2, 9];   (random numbers but this means the vector is going up or down)
+Step 5 - the dot product formula is: (v1 at index1 * v2 at index 1) + (v1 at index 2 and v2 at index 2)\
+          so we will loop through v1 :
+          for (let i = 0; i < v1.length; i++){
+            dot_product = dot_product + v1[i] and v2[i]
+          }
+          now we may ask where did v2 come from since we are only accessing v1
+          v2 has the same length as the v1 array meaning they both have 2 values
+          therefore we can succesfully use i to represent the values or points in v2
+        
+Step 6 - so now after getting the dot product we have to check if it is orthogonal 
+          and console log a message
+          so to do that: 
+          if (dot_product === 0){
+            console.log("Orthogonal");
+          }
+          else{
+            console.log("Not Orthogonal);
+          }
